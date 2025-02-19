@@ -1,1 +1,5 @@
 # STM32F446ZE-BME280-I2C
+
+PB8 -> SCL
+PB9 -> SDA
+HAL Library
