@@ -363,7 +363,7 @@ void BME280_Init() {
     uint8_t id;
     HAL_I2C_Mem_Read(&hi2c1, BME280_I2C_ADDRESS, BME280_REG_ID, 1, &id, 1, HAL_MAX_DELAY);
     if (id != 0x60) {
-        printf("BME280 bulunamadı!\n");
+        printf("BME280 Could not find!\n");
     }
 
     uint8_t reset_cmd = 0xB6;
